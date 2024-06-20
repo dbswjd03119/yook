@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>향수</title>
+    <style>
+        body{
+            background-color: rgb(227, 245, 255);
+        }
+        .header{
+            margin: 10px;
+            text-align: center;
+            background-color: rgb(69, 135, 176);
+            padding: 20PX;
+            color: white;
+        }
+        .side{
+            text-align: center;
+            position: absolute;
+            left: 10px;
+            width:25%;
+            float: left;
+            left: 10PX;
+        }
+        .side ul li{
+            background-color: rgb(137, 210, 255);
+            color: white;
+            padding: 20px;
+            margin: 3px;
+            list-style: none;
+            font-size: 20px;
+        }
+        .side ul li:hover{
+            background-color: rgb(193, 234, 255);
+            color: black;
+            padding: 20px;
+            margin: 5px;
+        }
+        .sub_bg{
+            position: relative;
+            float: left;
+            left: 30%;
+            width:50%;
+            height: 400px;
+            background: url('향수.jpg') 0 0% no-repeat;
+            background-size: 100%;
+            animation: animate_background 10s linear;
+            top: 22%;
+            margin: 30px auto;
+        }
+        .sub_bg h2{
+            color: rgb(0, 0, 0);
+            font-size: 40px;
+            text-align: center;
+            font-weight: 500;
+            padding-top: 100px;
+        }
+        .sub_bg h2 span{
+            display: block;
+            font-size: 20px;
+        }
+        .container{
+          position: relative;
+          justify-content: flex-end;
+          float: right;
+          width: 25%;
+          margin: 20px auto;
+          left: 10%;
+          }
+            
+        .input{
+            padding: 10px;
+           }
+           .footer{
+           background-color: rgb(69, 135, 176);
+           color: white;
+           text-align: center;
+           padding: 10px;
+          margin: 0px 0px 0px 0px;
+          font-size: 90%;
+           clear: both;
+         }
+         a:link, a:visited, a:hover, a:active {
+         text-decoration: none;
+          }
+
+
+        @keyframes animate_background{
+            0%{background-position: 0% 0%;}
+            50%{background-position: 0% 100%;}
+            100%{background-position: 0% 0%;}
+        }
+            @media screen and (max-width: 600px) {
+            .side {
+                float: none;
+                width: 100%;
+            }
+            .sub_bg .container{width: 100%;}}
+    </style>
+</head>
+<body>
+    <div class="header">
+   <h1> Perfumer</h1>
+    </div>
+
+    <div class="side">
+        <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="contents.html">Perfume Introduction</a></li>
+            <li><a href="gallery.html">Perfume material</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <h2>Login</h2>
+        <p>Email</p>
+            <input type="Email" id="Email" name="Email" placeholder="Email">
+        <p>password</p>
+            <input type="password" id="password" name="password" placeholder="password">
+            <br>
+            <input type="submit" value="Login">
+    </div>
+
+    <div class="sub_bg adv">
+    <h2> 새로운 향기 <br>당신에게 선물합니다.<span>background animation</span></h2>
+    </div>
+    <div class="footer"><pre>고객정보                      /                    제작자</pre></div>
+
+</body>
+</html>

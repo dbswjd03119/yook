@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>향수</title>
+    <style>
+        body{
+            background-color: rgb(227, 245, 255);
+        }
+        .header{
+            margin: 10px;
+            text-align: center;
+            background-color: rgb(69, 135, 176);
+            padding: 20PX;
+            color: white;
+        }
+        .side{
+            text-align: center;
+            position: absolute;
+            left: 10px;
+            width:25%;
+            float: left;
+            left: 10PX;
+        }
+        .side ul li{
+            background-color: rgb(137, 210, 255);
+            color: white;
+            padding: 20px;
+            margin: 3px;
+            list-style: none;
+            font-size: 20px;
+        }
+        .side ul li:hover{
+            background-color: rgb(193, 234, 255);
+            color: black;
+            padding: 20px;
+            margin: 3px;
+        }
+        table{
+             margin-left: 30%;
+             justify-content: center;
+  align-items: center;
+            padding-left: 30%;
+            border-collapse: collapse;
+             top: 20%;
+             right: 0%;  
+        }
+        table, td, tr{
+            top: 20%;
+           left: 70%;
+            border: 1px solid;}
+        td{text-align: center;
+           height: 100px;}
+
+        .footer{
+           background-color: rgb(69, 135, 176);
+           color: white;
+           text-align: center;
+           padding: 10px;
+           font-size: 90%;
+         }
+         a:link, a:visited, a:hover, a:active {
+         text-decoration: none;
+          }
+
+        @keyframes animate_background{
+            0%{background-position: 0% 0%;}
+            50%{background-position: 0% 100%;}
+            100%{background-position: 0% 0%;}
+        }
+     @media screen and (max-width: 600px) {
+          .side, .table{width: 100%;}}
+    </style>
+</head>
+<body>
+    <div class="header">
+   <h1> Perfumer</h1>
+    </div>
+
+    <div class="side">
+        <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="contents.html">Perfume Introduction</a></li>
+            <li><a href="gallery.html">Perfume material</a></li>
+        </ul>
+    </div>
+    <div></div>
+    <table>
+        <tbody>
+            <tr> 
+                <td><a href="로즈오일.html">
+                    <img src="로즈오일.png" alt="로즈오일" width="500" height="390"></a></td>
+                <td><a href="산딸기 추출물.html">
+                    <img src="산딸기 추출물.jpg" alt="산딸기 추출물" width="500" height="390"></a></td>
+            </tr>
+            <tr><td>로즈오일</td><td>산딸기 추출물</td></tr>
+
+            <tr> <td> <a href="바닐라 추출물.html">
+                      <img src="바닐라 추출물.jpeg" alt="바닐라 추출물" width="500"></a></td>
+                 <td> <a href="자스민 오일.html">
+                      <img src="자스민 오일.jpeg" alt="자스민 오일" width="500" height="410"></a></td>
+            </tr>
+            <tr><td>바닐라 추출물</td><td>자스민 오일</td></tr>
+
+            <tr> <td> <a href="시너우드 오일.html">
+                <img src="시너우드 오일.jpeg" alt="시너우드 오일" width="500" height="410"></a></td>
+            </tr>   
+            <tr><td>시너우드 오일</td></tr>
+    </table>        
+
+    </div>
+    <div class="footer"><pre>고객정보                      /                    제작자</pre></div>
+
+</body>
+</html>
